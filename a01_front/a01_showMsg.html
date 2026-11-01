@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT Chat</title>
+</head>
+<body> 
+    <!-- action="/tellGpt" method="get" 을 명시해주는 것이 좋습니다. -->
+    <form action="/tellGpt" method="get">
+        gpt에게 보낼 메시지: 
+        <input name="msg" placeholder="질문을 입력하세요">
+        <input type="submit" value="물어보기">
+    </form>
+    
+    <hr>
+    
+    <!-- 결과 출력부 -->
+    <div>{{rstMsg}}</div>
+</body>
+</html>
